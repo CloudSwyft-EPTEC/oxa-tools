@@ -24,10 +24,10 @@
             "value": "Standard_D2_v2"
         },
         "adminUsername": {
-            "value": "lexoxaadmin"
+            "value": "cs-admin"
         },
         "adminPublicKey": {
-            "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCj0GHnhX8L8cPtCFhNPTClvDMzeMsB+ys5uMaqFgTa2mrWSUBsbsVwK91H6mwtrKRJf42Ry5DVYKLPf8XSz22v5iyZ1DrbkGJcmHRWEBFA47habQFg+eXBUSENUf1cMOh4RwkN1olCLpsdeKrF0Rj6k3ZFODUJIf+v5HYKFkj+8iVdQh0wgnPVxneqIKcbqNLO8ymmAiTT+fYaubPWzJmq8nUKoNZRiPXSSAwHHtNouR4vvPtOU7je2TxzoYIcM/Ja6YycBx44W+A7ygY5/hmij4Byhm20MLZLoBLX2AMp8horzqWhdF/wvFMhv8FTTzlWpwhuEpbd2M4B6Tylajm8lwA9u/9MO6lEbqnX/XH/KS9hPZdKvqXgbPTzM265Aea0LPXHDdF0f9AID6Xl3grHrtkKFGMzbgqFtF9nd51kwDTZr2b1zIVWb6XxDXXVhX4XqWniCT8xEzuGyMp4/mhaghRDhT45Alu6Frv6d5+IjeabBSXOwwe+8NpTDc0+hxM/MYiE4K6EHpPqwxOoRJcZFrjdSxQGGrCD+bLJbGfI8tn96Wq4zBBUMp+iX1iXXNScgqUAaSoNKEH8ag177oOvtH3AsB/b7Nm/eUIr/WYfYESlft1M1h25Lvu6QgFyqJlwdXSPCiIYbR6nK6WI2Zz6cActCLoJaN7IPw6RLeY+tw== admin@contoso.com"
+            "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCt/WkNiMfRrmmZHJNd3Cw6jQzaZKJIF6/6udkcIc2jdokGAZJiHJIdDorY7N6Fg44yAz0lTOVWTc7ybXnSNHkwlx27/CtlobVOTes5WVr5KwKoZ2ke6/oLs3u69KOE+89vx26GYl/SJQjpIkmYLtXu0AS/PzeidwAzTqonfriW++N/K4QmJPx1xK3q2SqWuezQUIafXR434DBCIu+C8V6pbNVLO93Pv79+U7POViI5l1WKWZgQ38OGX8Clvr+oWjVnCIfS6iRLCAPqFAVlZp6Deld9dwYs/ditN0JlZQW8zraWrcji22VuHlGGkykQwn6/ooZgMhSgzGtNGigvZeiiDGuveqL+4QR0Or1SBriQJ5MNB2Uws8WObVAku2E373S/TAC+s3xUEoKhFlGOv2D4Zzpc0Hg+aQqpz9m3hY7jitNK0jwEWC33qfMfpAhGtgCGrXzKlV1Vl31RdXuytlrq08RrcM5YYKDnWNICePCoKEWj0zgMYCrgyZMLkL9qPmanTjNNtThM6rSh8h2sg9ECf5Lir33Mr5oknOm7P6f3EHeKF9l4FcNJedtChhatZBVhtPKROvBS9Vpj998J9ObZC4SQyNkn7Ayf2SbTDlxBUfJ1eRHygH1w7Vc1evHsLRVSQmcGylyf5KFX+N8krJx1fTaO/zYa/zZAX9k0meG5sw== root@CLOUDSWYFT_L1"
         },
         "mongoServerAdminUserName": {
             "value": "oxamongoadmin"
@@ -75,7 +75,7 @@
             "value": 1
         },
         "oxaToolsGithubAccountName": {
-            "value": "Microsoft"
+            "value": "CloudSwyft-repo"
         },
         "oxaToolsGithubProjectName": {
             "value": "oxa-tools"
@@ -84,7 +84,7 @@
             "value": "{GITHUBBRANCH}"
         },
         "edxConfigurationGithubAccountName": {
-            "value": "Microsoft"
+            "value": "CloudSwyft-repo"
         },
         "edxConfigurationGithubProjectName": {
             "value": "edx-configuration"
@@ -93,7 +93,7 @@
             "value": "{GITHUBBRANCH}"
         },
         "edxPlatformGithubAccountName": {
-            "value": "microsoft"
+            "value": "CloudSwyft-repo"
         },
         "edxPlatformGithubProjectName": {
             "value": "edx-platform"
@@ -102,7 +102,7 @@
             "value": "{GITHUBBRANCH}"
         },
         "edxThemeGithubAccountName": {
-            "value": "microsoft"
+            "value": "CloudSwyft-repo"
         },
         "edxThemeGithubProjectName": {
             "value": "edx-theme"
@@ -111,7 +111,7 @@
             "value": "{GITHUBBRANCH}"
         },
         "ansibleGithubAccountName": {
-            "value": "edx"
+            "value": "CloudSwyft-repo"
         },
         "ansibleGithubProjectName": {
             "value": "ansible"
@@ -230,7 +230,7 @@
             "value": ""
         },
         "baseDomain": {
-            "value": "{CLUSTERNAME}-tm.trafficmanager.net"
+            "value": ""
         },
         "domainSeparator": {
             "value": "-"
