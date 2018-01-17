@@ -239,7 +239,7 @@
             "value": false
         },
         "enableComprehensiveTheming": {
-            "value": false
+            "value": true
         },
         "comprehensiveThemingDirectory": {
             "value": ""
