@@ -45,7 +45,7 @@ EDX_THEME_NAME="default"
 
 # EdX Ansible
 # There are cases where we want to override the edx\ansible repository itself
-ANSIBLE_PUBLIC_GITHUB_ACCOUNTNAME="edx"
+ANSIBLE_PUBLIC_GITHUB_ACCOUNTNAME="CloudSwyft-repo"
 ANSIBLE_PUBLIC_GITHUB_PROJECTNAME="ansible"
 ANSIBLE_PUBLIC_GITHUB_PROJECTBRANCH="master"
 
