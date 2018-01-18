@@ -8,7 +8,7 @@
 set -axe
 
 # static strings
-readonly MSFT="microsoft"
+readonly MSFT="CloudSwyft-repo"
 readonly EDX="edx"
 readonly USE_MSFT="useMsftRepo"
 readonly USE_FICUS="useFicusTag"
