@@ -37,7 +37,7 @@
         },
         "mongoVmSize": {
             "type": "string",
-            "defaultValue": "Standard_D2_v2",
+            "defaultValue": "Standard_D1_v2",
             "allowedValues": [
                 "Standard_D1_v2",
                 "Standard_D2_v2",
@@ -56,7 +56,7 @@
         },
         "mysqlVmSize": {
             "type": "string",
-            "defaultValue": "Standard_D2_v2",
+            "defaultValue": "Standard_D1_v2",
             "allowedValues": [
                 "Standard_D1_v2",
                 "Standard_D2_v2",
@@ -75,7 +75,7 @@
         },
         "frontendVmSize": {
             "type": "string",
-            "defaultValue": "Standard_D2_v2",
+            "defaultValue": "Standard_D1_v2",
             "allowedValues": [
                 "Standard_D1_v2",
                 "Standard_D2_v2",
@@ -148,7 +148,7 @@
         },
         "autoScaleEnabled": {
             "type": "bool",
-            "defaultValue": "false",
+            "defaultValue": "true",
             "metadata": {
                 "description": "Indicator of whether or not autoscaling would be enabled on the Vm Scale Set"
             }
@@ -193,7 +193,7 @@
         },
         "oxaToolsGithubBranch": {
             "type": "string",
-            "defaultValue": "master",
+            "defaultValue": "oxa/master.fic",
             "metadata": {
                 "description": "Branch of the oxa-tools GitHub repository"
             }
@@ -214,7 +214,7 @@
         },
         "edxConfigurationGithubBranch": {
             "type": "string",
-            "defaultValue": "oxa/master",
+            "defaultValue": "oxa/master.fic",
             "metadata": {
                 "description": "Branch of edx configuration GitHub repository"
             }
@@ -235,7 +235,7 @@
         },
         "edxPlatformGithubBranch": {
             "type": "string",
-            "defaultValue": "oxa/master",
+            "defaultValue": "oxa/master.fic",
             "metadata": {
                 "description": "Branch of edx platform GitHub repository"
             }
@@ -263,7 +263,7 @@
         },
         "ansibleGithubAccountName": {
             "type": "string",
-            "defaultValue": "CloudSwyft-repo",
+            "defaultValue": "ansible",
             "metadata": {
                 "description": "Name of the account that owns the ansible repository"
             }
@@ -277,7 +277,7 @@
         },
         "ansibleGithubBranch": {
             "type": "string",
-            "defaultValue": "master",
+            "defaultValue": "stable-2.4",
             "metadata": {
                 "description": "Branch of ansible GitHub repository"
             }
@@ -395,7 +395,7 @@
         },
         "deploymentVersionId": {
             "type": "string",
-            "defaultValue": "20180116",
+            "defaultValue": "201611211241",
             "metadata": {
                 "description": "The identifier for versioning bits deployed to VMSS"
             }
@@ -523,14 +523,14 @@
         },
         "comprehensiveThemingDirectory": {
             "type": "string",
-            "defaultValue": "",
+            "defaultValue": "/edx/app/edxapp/themes",
             "metadata": {
                 "description": "Root path to the directory containing the comprehensive themes"
             }
         },
         "comprehensiveThemingName": {
             "type": "string",
-            "defaultValue": "",
+            "defaultValue": "comprehensive",
             "metadata": {
                 "description": "Name of the comprehensive available under the 'comprehensiveThemingDirectory' that will be used"
             }

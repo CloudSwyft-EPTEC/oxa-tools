@@ -37,7 +37,7 @@
         },
         "mongoVmSize": {
             "type": "string",
-            "defaultValue": "Standard_D2_v2",
+            "defaultValue": "Standard_D1_v2",
             "allowedValues": [
                 "Standard_D1_v2",
                 "Standard_D2_v2",
@@ -56,7 +56,7 @@
         },
         "mysqlVmSize": {
             "type": "string",
-            "defaultValue": "Standard_D2_v2",
+            "defaultValue": "Standard_D1_v2",
             "allowedValues": [
                 "Standard_D1_v2",
                 "Standard_D2_v2",
@@ -75,7 +75,7 @@
         },
         "frontendVmSize": {
             "type": "string",
-            "defaultValue": "Standard_D2_v2",
+            "defaultValue": "Standard_D1_v2",
             "allowedValues": [
                 "Standard_D1_v2",
                 "Standard_D2_v2",
@@ -97,7 +97,7 @@
         },
         "adminUsername": {
             "type": "string",
-            "defaultValue": "lexoxaadmin"
+            "defaultValue": "cs-admin"
         },
         "adminPublicKey": {
             "type": "securestring"
@@ -172,7 +172,7 @@
         },
         "customInstallerGithubAccountName": {
             "type": "string",
-            "defaultValue": "microsoft",
+            "defaultValue": "CloudSwyft-repo",
             "metadata": {
                 "description": "Name of the GitHub account where the custom installer lives"
             }
@@ -186,7 +186,7 @@
         },
         "customInstallerGithubBranch": {
             "type": "string",
-            "defaultValue": "master",
+            "defaultValue": "oxa/master.fic",
             "metadata": {
                 "description": "The branch of the GitHub project from which custom installer scripts and other files will be downloaded"
             }
@@ -199,7 +199,7 @@
         },
         "githubAccountName": {
             "type": "string",
-            "defaultValue": "microsoft",
+            "defaultValue": "CloudSwyft-repo",
             "metadata": {
                 "description": "Name of the GitHub account where the Azure Arm Template lives"
             }
@@ -213,7 +213,7 @@
         },
         "githubBranch": {
             "type": "string",
-            "defaultValue": "master",
+            "defaultValue": "oxa/master.fic",
             "metadata": {
                 "description": "The branch of the GitHub project from which scripts and other files will be downloaded"
             }
