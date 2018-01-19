@@ -9,12 +9,11 @@ EDX_ROLE=""
 DEPLOYMENT_ENV="dev"
 CRON_MODE=0
 RETRY_COUNT=5
-MSFT_AUTH=
 TARGET_FILE=""
 
 # Oxa Tools
 # Settings for the OXA-Tools public repository 
-OXA_TOOLS_PUBLIC_GITHUB_ACCOUNTNAME="CloudSwyft-repo"
+OXA_TOOLS_PUBLIC_GITHUB_ACCOUNTNAME="Microsoft"
 OXA_TOOLS_PUBLIC_GITHUB_PROJECTNAME="oxa-tools"
 OXA_TOOLS_PUBLIC_GITHUB_PROJECTBRANCH="oxa/master.fic"
 
@@ -23,7 +22,7 @@ OXA_TOOLS_VERSION=""
 
 # EdX Configuration
 # There are cases where we want to override the edx-configuration repository itself
-EDX_CONFIGURATION_PUBLIC_GITHUB_ACCOUNTNAME="CloudSwyft-repo"
+EDX_CONFIGURATION_PUBLIC_GITHUB_ACCOUNTNAME="Microsoft"
 EDX_CONFIGURATION_PUBLIC_GITHUB_PROJECTNAME="edx-configuration"
 EDX_CONFIGURATION_PUBLIC_GITHUB_PROJECTBRANCH="oxa/master.fic"
 
@@ -32,20 +31,20 @@ CONFIGURATION_VERSION=""
 
 # EdX Platform
 # There are cases where we want to override the edx-platform repository itself
-EDX_PLATFORM_PUBLIC_GITHUB_ACCOUNTNAME="CloudSwyft-repo"
+EDX_PLATFORM_PUBLIC_GITHUB_ACCOUNTNAME="Microsoft"
 EDX_PLATFORM_PUBLIC_GITHUB_PROJECTNAME="edx-platform"
 EDX_PLATFORM_PUBLIC_GITHUB_PROJECTBRANCH="oxa/master.fic"
 
 # EdX Theme
 # There are cases where we want to override the edx-platform repository itself
-EDX_THEME_PUBLIC_GITHUB_ACCOUNTNAME="CloudSwyft-repo"
+EDX_THEME_PUBLIC_GITHUB_ACCOUNTNAME="Microsoft"
 EDX_THEME_PUBLIC_GITHUB_PROJECTNAME="edx-theme"
 EDX_THEME_PUBLIC_GITHUB_PROJECTBRANCH="oxa/master.fic"
 EDX_THEME_NAME="default"
 
 # EdX Ansible
 # There are cases where we want to override the edx\ansible repository itself
-ANSIBLE_PUBLIC_GITHUB_ACCOUNTNAME="CloudSwyft-repo"
+ANSIBLE_PUBLIC_GITHUB_ACCOUNTNAME="edx"
 ANSIBLE_PUBLIC_GITHUB_PROJECTNAME="ansible"
 ANSIBLE_PUBLIC_GITHUB_PROJECTBRANCH="master"
 
@@ -99,10 +98,6 @@ parse_args()
             ;;
           -e|--environment)
             DEPLOYMENT_ENV="${arg_value,,}" # convert to lowercase
-            ;;
-          --msft-oauth)
-            # convert to lowercase
-            MSFT_AUTH="${arg_value,,}"
             ;;
           --cron)
             CRON_MODE=1
@@ -277,7 +272,7 @@ verify_state()
       display_usage
     fi
 
-    if ! is_valid_arg "dev bvt int prod" $DEPLOYMENT_ENV ; then
+    if ! is_valid_arg "dev bvt prod" $DEPLOYMENT_ENV ; then
       echo "Invalid environment specified\n"
       display_usage
     fi
@@ -475,6 +470,22 @@ update_fullstack()
     /edx/bin/supervisorctl status
 }
 
+remove_browsers()
+{
+    if type firefox >/dev/null 2>&1 ; then
+        log "Un-installing firefox...The proper version will be installed later"
+        apt-wrapper "purge firefox"
+    fi
+
+    if type google-chrome-stable >/dev/null 2>&1 ; then
+        log "Un-installing chrome...The proper version will be installed later"
+        apt-wrapper "purge google-chrome-stable"
+    fi
+
+    # Package that comes with firefox.
+    apt-wrapper "remove hunspell-en-us"
+}
+
 update_devstack()
 {
     if ! id -u vagrant > /dev/null 2>&1 ; then
@@ -637,7 +648,7 @@ setup
 PATH=$PATH:/edx/bin
 ANSIBLE_PLAYBOOK=ansible-playbook
 OXA_PLAYBOOK=$OXA_TOOLS_PATH/playbooks/oxa_configuration.yml
-OXA_PLAYBOOK_ARGS="-e oxa_tools_path=$OXA_TOOLS_PATH -e template_type=$TEMPLATE_TYPE -e msft_auth=$MSFT_AUTH"
+OXA_PLAYBOOK_ARGS="-e oxa_tools_path=$OXA_TOOLS_PATH -e template_type=$TEMPLATE_TYPE"
 THEME_ARGS="-e theme_branch=$EDX_THEME_PUBLIC_GITHUB_PROJECTBRANCH -e theme_repo=$EDX_THEME_REPO"
 OXA_SSH_ARGS="-u $ADMIN_USER --private-key=/home/$ADMIN_USER/.ssh/id_rsa"
 

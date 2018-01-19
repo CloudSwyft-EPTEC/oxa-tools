@@ -4,7 +4,7 @@
 
 # argument defaults
 DEPLOYMENT_ENV="dev"
-OXA_TOOLS_VERSION_OVERRIDE="oxa/master.fic"
+OXA_TOOLS_VERSION_OVERRIDE="master"
 MACHINE_ROLE=""
 BOOTSTRAP_PHASE=0
 TARGET_FILE=/var/log/bootstrap-Phase0.log
@@ -280,7 +280,7 @@ parse_args $@ # pass existing command line arguments
 ##
 BOOTSTRAP_HOME=$(dirname $0)
 OXA_PATH=/oxa
-OXA_TOOLS_REPO="https://github.com/CloudSwyft-repo/oxa-tools.git"
+OXA_TOOLS_REPO="https://github.com/microsoft/oxa-tools.git"
 OXA_TOOLS_PATH=$OXA_PATH/oxa-tools
 OXA_TOOLS_CONFIG_PATH=$OXA_PATH/oxa-tools-config
 CONFIGURATION_PATH=$OXA_PATH/configuration

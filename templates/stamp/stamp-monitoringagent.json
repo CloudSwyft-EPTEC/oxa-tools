@@ -28,7 +28,7 @@
         },
         "oxaToolsGithubAccountName": {
             "type": "string",
-            "defaultValue": "CloudSwyft-repo",
+            "defaultValue": "microsoft",
             "metadata": {
                 "description": "Name of the account that owns the oxa-tools GitHub repository"
             }
@@ -42,7 +42,7 @@
         },
         "oxaToolsGithubBranch": {
             "type": "string",
-            "defaultValue": "oxa/master.fic",
+            "defaultValue": "master",
             "metadata": {
                 "description": "Branch of the oxa-tools GitHub repository"
             }

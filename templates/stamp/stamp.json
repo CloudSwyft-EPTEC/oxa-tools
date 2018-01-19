@@ -37,7 +37,7 @@
         },
         "mongoVmSize": {
             "type": "string",
-            "defaultValue": "Standard_D1_v2",
+            "defaultValue": "Standard_D2_v2",
             "allowedValues": [
                 "Standard_D1_v2",
                 "Standard_D2_v2",
@@ -56,7 +56,7 @@
         },
         "mysqlVmSize": {
             "type": "string",
-            "defaultValue": "Standard_D1_v2",
+            "defaultValue": "Standard_D2_v2",
             "allowedValues": [
                 "Standard_D1_v2",
                 "Standard_D2_v2",
@@ -75,7 +75,7 @@
         },
         "frontendVmSize": {
             "type": "string",
-            "defaultValue": "Standard_D1_v2",
+            "defaultValue": "Standard_D2_v2",
             "allowedValues": [
                 "Standard_D1_v2",
                 "Standard_D2_v2",
@@ -97,7 +97,7 @@
         },
         "adminUsername": {
             "type": "string",
-            "defaultValue": "cs-admin"
+            "defaultValue": "lexoxaadmin"
         },
         "adminPublicKey": {
             "type": "securestring"
@@ -149,7 +149,7 @@
         },
         "customInstallerGithubAccountName": {
             "type": "string",
-            "defaultValue": "CloudSwyft-repo",
+            "defaultValue": "microsoft",
             "metadata": {
                 "description": "Name of the GitHub account where the custom installer lives"
             }
@@ -176,7 +176,7 @@
         },
         "githubAccountName": {
             "type": "string",
-            "defaultValue": "CloudSwyft-repo",
+            "defaultValue": "microsoft",
             "metadata": {
                 "description": "Name of the GitHub account where the Azure Arm Template lives"
             }

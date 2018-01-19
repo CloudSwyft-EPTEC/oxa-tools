@@ -9,7 +9,7 @@
 # 2. Run Bootstrap for Mongo & MySql
 
 ERROR_MESSAGE=1
-GITHUB_PROJECTBRANCH="oxa/master.fic"
+GITHUB_PROJECTBRANCH="master"
 CLOUD_NAME=""
 MONITORING_CLUSTER_NAME=""
 OS_ADMIN_USERNAME=""
@@ -28,21 +28,21 @@ EDX_CONFIGURATION_PUBLIC_GITHUB_PROJECTBRANCH=""
 
 # EdX Platform
 # There are cases where we want to override the edx-platform repository itself
-EDX_PLATFORM_PUBLIC_GITHUB_ACCOUNTNAME="CloudSwyft-repo"
+EDX_PLATFORM_PUBLIC_GITHUB_ACCOUNTNAME="Microsoft"
 EDX_PLATFORM_PUBLIC_GITHUB_PROJECTNAME="edx-platform"
-EDX_PLATFORM_PUBLIC_GITHUB_PROJECTBRANCH="oxa/master.fic"
+EDX_PLATFORM_PUBLIC_GITHUB_PROJECTBRANCH="oxa/master"
 
 # EdX Theme
 # There are cases where we want to override the edx-platform repository itself
-EDX_THEME_PUBLIC_GITHUB_ACCOUNTNAME="CloudSwyft-repo"
+EDX_THEME_PUBLIC_GITHUB_ACCOUNTNAME="Microsoft"
 EDX_THEME_PUBLIC_GITHUB_PROJECTNAME="edx-theme"
 EDX_THEME_PUBLIC_GITHUB_PROJECTBRANCH="pilot"
 
 # EdX Ansible
 # There are cases where we want to override the edx\ansible repository itself
-ANSIBLE_PUBLIC_GITHUB_ACCOUNTNAME="ansible"
+ANSIBLE_PUBLIC_GITHUB_ACCOUNTNAME="edx"
 ANSIBLE_PUBLIC_GITHUB_PROJECTNAME="ansible"
-ANSIBLE_PUBLIC_GITHUB_PROJECTBRANCH="stable-2.4"
+ANSIBLE_PUBLIC_GITHUB_PROJECTBRANCH="master"
 
 # MISC
 EDX_VERSION="named-release/dogwood.rc"

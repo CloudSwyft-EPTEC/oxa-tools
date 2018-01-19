@@ -37,7 +37,7 @@
         },
         "mongoVmSize": {
             "type": "string",
-            "defaultValue": "Standard_D1_v2",
+            "defaultValue": "Standard_D2_v2",
             "allowedValues": [
                 "Standard_D1_v2",
                 "Standard_D2_v2",
@@ -56,7 +56,7 @@
         },
         "mysqlVmSize": {
             "type": "string",
-            "defaultValue": "Standard_D1_v2",
+            "defaultValue": "Standard_D2_v2",
             "allowedValues": [
                 "Standard_D1_v2",
                 "Standard_D2_v2",
@@ -75,7 +75,7 @@
         },
         "frontendVmSize": {
             "type": "string",
-            "defaultValue": "Standard_D1_v2",
+            "defaultValue": "Standard_D2_v2",
             "allowedValues": [
                 "Standard_D1_v2",
                 "Standard_D2_v2",
@@ -97,7 +97,7 @@
         },
         "adminUsername": {
             "type": "string",
-            "defaultValue": "cs-admin"
+            "defaultValue": "lexoxaadmin"
         },
         "adminPublicKey": {
             "type": "securestring"
@@ -148,7 +148,7 @@
         },
         "autoScaleEnabled": {
             "type": "bool",
-            "defaultValue": "true",
+            "defaultValue": "false",
             "metadata": {
                 "description": "Indicator of whether or not autoscaling would be enabled on the Vm Scale Set"
             }
@@ -179,7 +179,7 @@
         },
         "oxaToolsGithubAccountName": {
             "type": "string",
-            "defaultValue": "CloudSwyft-repo",
+            "defaultValue": "microsoft",
             "metadata": {
                 "description": "Name of the account that owns the oxa-tools GitHub repository"
             }
@@ -193,14 +193,14 @@
         },
         "oxaToolsGithubBranch": {
             "type": "string",
-            "defaultValue": "oxa/master.fic",
+            "defaultValue": "master",
             "metadata": {
                 "description": "Branch of the oxa-tools GitHub repository"
             }
         },
         "edxConfigurationGithubAccountName": {
             "type": "string",
-            "defaultValue": "CloudSwyft-repo",
+            "defaultValue": "microsoft",
             "metadata": {
                 "description": "Name of the account that owns the edx configuration repository"
             }
@@ -214,14 +214,14 @@
         },
         "edxConfigurationGithubBranch": {
             "type": "string",
-            "defaultValue": "oxa/master.fic",
+            "defaultValue": "oxa/master",
             "metadata": {
                 "description": "Branch of edx configuration GitHub repository"
             }
         },
         "edxPlatformGithubAccountName": {
             "type": "string",
-            "defaultValue": "CloudSwyft-repo",
+            "defaultValue": "microsoft",
             "metadata": {
                 "description": "Name of the account that owns the edx platform repository"
             }
@@ -235,14 +235,14 @@
         },
         "edxPlatformGithubBranch": {
             "type": "string",
-            "defaultValue": "oxa/master.fic",
+            "defaultValue": "oxa/master",
             "metadata": {
                 "description": "Branch of edx platform GitHub repository"
             }
         },
         "edxThemeGithubAccountName": {
             "type": "string",
-            "defaultValue": "CloudSwyft-repo",
+            "defaultValue": "microsoft",
             "metadata": {
                 "description": "Name of the account that owns the edx theme repository"
             }
@@ -263,7 +263,7 @@
         },
         "ansibleGithubAccountName": {
             "type": "string",
-            "defaultValue": "ansible",
+            "defaultValue": "edx",
             "metadata": {
                 "description": "Name of the account that owns the ansible repository"
             }
@@ -277,7 +277,7 @@
         },
         "ansibleGithubBranch": {
             "type": "string",
-            "defaultValue": "stable-2.4",
+            "defaultValue": "master",
             "metadata": {
                 "description": "Branch of ansible GitHub repository"
             }
@@ -523,14 +523,14 @@
         },
         "comprehensiveThemingDirectory": {
             "type": "string",
-            "defaultValue": "/edx/app/edxapp/themes",
+            "defaultValue": "",
             "metadata": {
                 "description": "Root path to the directory containing the comprehensive themes"
             }
         },
         "comprehensiveThemingName": {
             "type": "string",
-            "defaultValue": "comprehensive",
+            "defaultValue": "",
             "metadata": {
                 "description": "Name of the comprehensive available under the 'comprehensiveThemingDirectory' that will be used"
             }
@@ -586,7 +586,7 @@
         },
         "edxPlatformName": {
             "type": "string",
-            "defaultValue": "CloudSwyft Apollo Academy",
+            "defaultValue": "Contoso Learning",
             "metadata": {
                 "description": "Name used to identify the application"
             }
