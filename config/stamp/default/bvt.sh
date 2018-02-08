@@ -17,8 +17,8 @@ ENVIRONMENT=bvt
 
 # the site certificate files (.crt & .key) have to be named after the BASE_URL value
 BASE_URL=cloudswyft.com 
-LMS_URL=masterapollo-academy.$BASE_URL
-CMS_URL=masterapollo-studio.$BASE_URL
+LMS_URL=epacademy-official.$BASE_URL
+CMS_URL=epacademy-studio.$BASE_URL
 PREVIEW_URL=preview.$BASE_URL
 
 # deployment configuration
