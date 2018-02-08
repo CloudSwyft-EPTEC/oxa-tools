@@ -27,7 +27,7 @@
             "value": "lexoxaadmin"
         },
         "adminPublicKey": {
-            "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC3DiydMAmJRcrH6W1zSp1VRsGIF9Ze9M2HEZnagsMudqXj8PQ/0UNwJ9p350GC9Ky3imZNCclE35BvaH7NZ7J4WMEPSm8jlGpyP9R8S9mGrKnUjimtTAf6VZ5eSj4hp2Gdx6+jWCzcrZ7yfz3o8E7Y6YF09J3zjOHUq4EDNdk7fzYcaAY64SHdz6/orhCnM69N/oi2PP+w/p0Ils4eGBKRNbh5J3+xG89xUSqvuRcAHs/VQHjREBeCtKKDuv2NMskrLxh/Lc/rS+EMfFgHHT7sL8XL0ikMVZFFPWCluYjf3Smn6zTpcIH3IedBxBta7hvSc4NSP/h4Yp4RvoRRHID1RlZpKY56ucvO+uHH3Kj33FxlIs/jXMEdDPCBYrweR/+Y4P3erNQn6OuK3o9YqrgEzzRctXx0oZVMOPLZEdgAwXt/rycyWWF2W0oQ/xYnBhVlZtFjSllGEgITLx7Ww+jwOQS5cBwwxU/8gQRk2VYThAD3UmR00QZ4pKMnmMoDZzAt2IT4jAcRRF9qI0ydq3+YWdQMQjoY0eACuPGh5FcUnMkgK6XgTKxEmIFQPSyxeU326uloE0NT1d7JY7KU8+uP/q4p8+MXW0UsphotwwWywqzD6vcQCRIFPOam0+UnDxQa/HG/ZUCAkQ23ocaQHWVbE+LOUA/31IgWlNFc1yK+NQ== USER@CLOUDSWYFT_L5"
+            "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCi4gv4VsACBb0QVnb5KA6gFADHWsPIkhXd08WIbDetV7x9e5IpnmSNmZWxy3OlNZ1vP8Za6VrB973jGqHp/U2vq5sNMdoZAlkCZApRa/g2Tjl6UIqIEt1jGIzgPGWYxdhohZiYaNhrrBZQWmLeq0drz1EYSXGV/5sTBnGmVBi7AntwezO5RBtabU80q9Kyb1DwoxYpXlkwVOixBVQl+nNLUpPpf7X/xNKjL0EtCPLPMkHt1l3uo5QjFPX9+jnblcHI3MAvMpAEM3qlLckkGwObeEJ0/xOhPAh9y5vc+b14p67olQB2nc+i80m74KNBcYhNZjng/AQX2BbhA3TtUgzz3c3odC1EHE3fcJPydIBWMDc7Npn5xmusJwm/8v+xPlWZDRlHE9KcUW8V0d1ktIHgJGj4reHfG0EH5Zvb9UguGTTnJJAT5w+PeQr1x9lKGfOxYjmsQulIL6O0L0rKz8Ln0IrC8vLm4bwYbGM/d6/E+HeyWD3vm6HDM6TDufWxvHyrS7GigxYP8GOIlTk0DCk4Y9heAvtyVlVxQIfDF/eQP6ZOJOi3QUG17EKBFTjPjuqxjsReGKSXVA339GRU1imZ15oZM6R8Hl34px748Rd7VIFxBTkt1jo/Wd+olNSC+ZA8HMLvihX+X2fOAAZbc5MzUvQfcrizgfLtu+XRWlkUFQ== USER@CLOUDSWYFT_L5"
         },
         "mongoServerAdminUserName": {
             "value": "oxamongoadmin"
@@ -75,7 +75,7 @@
             "value": 1
         },
         "oxaToolsGithubAccountName": {
-            "value": "CloudSwyft-APPOXA"
+            "value": "CloudSwyft-MasterApollo"
         },
         "oxaToolsGithubProjectName": {
             "value": "oxa-tools"
@@ -84,7 +84,7 @@
             "value": "oxa/master.fic"
         },
         "edxConfigurationGithubAccountName": {
-            "value": "CloudSwyft-APPOXA"
+            "value": "CloudSwyft-MasterApollo"
         },
         "edxConfigurationGithubProjectName": {
             "value": "edx-configuration"
@@ -93,7 +93,7 @@
             "value": "oxa/master.fic"
         },
         "edxPlatformGithubAccountName": {
-            "value": "CloudSwyft-APPOXA"
+            "value": "CloudSwyft-MasterApollo"
         },
         "edxPlatformGithubProjectName": {
             "value": "edx-platform"
@@ -102,7 +102,7 @@
             "value": "oxa/master.fic"
         },
         "edxThemeGithubAccountName": {
-            "value": "CloudSwyft-APPOXA"
+            "value": "CloudSwyft-MasterApollo"
         },
         "edxThemeGithubProjectName": {
             "value": "edx-theme"
@@ -111,7 +111,7 @@
             "value": "oxa/master.fic"
         },
         "ansibleGithubAccountName": {
-            "value": "edx"
+            "value": "CloudSwyft-MasterApollo"
         },
         "ansibleGithubProjectName": {
             "value": "ansible"
@@ -242,7 +242,7 @@
             "value": true
         },
         "comprehensiveThemingDirectory": {
-            "value": "/edx/app/edxapp/themes"
+            "value": "/edx/app/edxapp/edx-platform/themes"
         },
         "comprehensiveThemingName": {
             "value": "comprehensive"
